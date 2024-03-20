@@ -1,0 +1,34 @@
+{
+  "name": "@cssfn/css-selectors",
+  "version": "2.0.8",
+  "description": "Manipulates css selector - parse, transform, calculate specificity, and more.",
+  "keywords": [
+    "css",
+    "stylesheet",
+    "selector",
+    "combinator",
+    "attributes"
+  ],
+  "author": "HeyMarco <31385284+heyymarco@users.noreply.github.com>",
+  "homepage": "https://cssfn.org",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssfn/cssfn-monorepo.git"
+  },
+  "main": "dist/css-selectors.js",
+  "types": "dist/css-selectors.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "dependencies": {
+    "@cssfn/types": "^2.0.1"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@cssfn/cssfn",
+  "version": "2.0.31",
+  "description": "Writes, imports, and exports css stylesheets as javascript modules.",
+  "keywords": [
+    "css",
+    "stylesheet",
+    "javascript",
+    "module",
+    "css-in-js"
+  ],
+  "author": "HeyMarco <31385284+heyymarco@users.noreply.github.com>",
+  "homepage": "https://cssfn.org",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssfn/cssfn-monorepo.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "dependencies": {
+    "@cssfn/css-prop-auto-prefix": "^2.0.1",
+    "@cssfn/css-selectors": "^2.0.8",
+    "@cssfn/css-types": "^2.0.6",
+    "@cssfn/types": "^2.0.1",
+    "@types/hyphenate-style-name": "^1.0.0",
+    "camel-case": "^4.1.2",
+    "hyphenate-style-name": "^1.0.4",
+    "is-in-browser": "^2.0.0",
+    "pascal-case": "^3.1.2",
+    "tiny-warning": "^1.0.3"
+  },
+  "peerDependencies": {
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^20.0.1",
+    "jsdom": "^20.0.3"
+  }
+}

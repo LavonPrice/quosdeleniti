@@ -1,0 +1,43 @@
+{
+  "name": "@cssfn/cssfn-react",
+  "version": "2.0.23",
+  "description": "Declares, loads, and unloads css stylesheets in React hooks way.",
+  "keywords": [
+    "css",
+    "stylesheet",
+    "css-in-js",
+    "react",
+    "client-side"
+  ],
+  "author": "HeyMarco <31385284+heyymarco@users.noreply.github.com>",
+  "homepage": "https://cssfn.org",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssfn/cssfn-monorepo.git"
+  },
+  "main": "dist/cssfn-react.js",
+  "types": "dist/cssfn-react.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "dependencies": {
+    "@cssfn/css-types": "^2.0.6",
+    "@cssfn/types": "^2.0.1",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9"
+  },
+  "peerDependencies": {
+    "@cssfn/cssfn": "^2.0.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rxjs": "^7.8.0"
+  }
+}

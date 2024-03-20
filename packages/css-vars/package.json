@@ -1,0 +1,41 @@
+{
+  "name": "@cssfn/css-vars",
+  "version": "2.0.14",
+  "description": "Reads/Writes CSS variables (CSS custom properties) in javascript property.",
+  "keywords": [
+    "css",
+    "stylesheet",
+    "variables",
+    "property",
+    "javascript",
+    "typescript"
+  ],
+  "author": "HeyMarco <31385284+heyymarco@users.noreply.github.com>",
+  "homepage": "https://cssfn.org",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssfn/cssfn-monorepo.git"
+  },
+  "main": "dist/css-vars.js",
+  "types": "dist/css-vars.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "dependencies": {
+    "@cssfn/css-types": "^2.0.6",
+    "@cssfn/types": "^2.0.1",
+    "is-in-browser": "^2.0.0",
+    "tiny-warning": "^1.0.3"
+  },
+  "peerDependencies": {
+    "@cssfn/cssfn": "^2.0.31"
+  }
+}

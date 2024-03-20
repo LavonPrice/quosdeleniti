@@ -1,0 +1,34 @@
+{
+  "name": "@cssfn/css-types",
+  "version": "2.0.6",
+  "description": "CSS typescript definitions.",
+  "keywords": [
+    "css",
+    "typescript",
+    "stylesheet",
+    "javascript",
+    "css-in-js"
+  ],
+  "author": "HeyMarco <31385284+heyymarco@users.noreply.github.com>",
+  "homepage": "https://cssfn.org",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssfn/cssfn-monorepo.git"
+  },
+  "main": "dist/css-types.js",
+  "types": "dist/css-types.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@cssfn/types": "^2.0.1",
+    "csstype": "^3.1.1"
+  }
+}

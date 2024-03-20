@@ -1,0 +1,46 @@
+{
+  "name": "@cssfn/cssfn-dom",
+  "version": "2.0.18",
+  "description": "Automatically attaches the registered css(fn) to DOM.",
+  "keywords": [
+    "css",
+    "stylesheet",
+    "javascript",
+    "module",
+    "css-in-js",
+    "DOM",
+    "browser",
+    "client-side"
+  ],
+  "author": "HeyMarco <31385284+heyymarco@users.noreply.github.com>",
+  "homepage": "https://cssfn.org",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssfn/cssfn-monorepo.git"
+  },
+  "main": "dist/cssfn-dom.js",
+  "types": "dist/cssfn-dom.d.ts",
+  "type": "module",
+  "sideEffects": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "dependencies": {
+    "is-in-browser": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@cssfn/cssfn": "^2.0.31"
+  },
+  "devDependencies": {
+    "@cssfn/css-types": "^2.0.6",
+    "@types/jsdom": "^20.0.1",
+    "jsdom": "^20.0.3",
+    "rxjs": "^7.8.0"
+  }
+}
